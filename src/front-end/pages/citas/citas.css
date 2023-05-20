@@ -44,10 +44,7 @@
   margin: 2px 0;
 }
 
-a:link, a:visited, a:active {
-  text-decoration:none;
-  font-weight: 700;
-}
+
 
 .barra-superior {
   height: 60px;
@@ -100,4 +97,13 @@ hr {
   width: 10%;
   border-radius: 30px;
   height: 40px;
+}
+
+.opciones{
+  margin-top: 40px;
+  background-color: #f1f1f1;
+  border-width: 0px;
+  font-size: 100%;
+  font-weight: bold;
+  color: rgb(103, 80, 164);
 }

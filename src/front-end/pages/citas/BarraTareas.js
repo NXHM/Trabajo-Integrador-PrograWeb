@@ -19,13 +19,13 @@ const BarraTareas = () => {
       </div>
       {desplegado && (
         <div className="contenidoDesplegable">
-          <br></br>
-          <a href="http://ulima.edu.pe" target="_blank" rel="noreferrer">Inicio</a><br></br>
-          <br></br>
-          <a href="http://ulima.edu.pe" target="_blank" rel="noreferrer">Perfil</a><br></br>
-          <br></br>
-          <a href="http://ulima.edu.pe" target="_blank" rel="noreferrer">Citas</a><br></br>
-        </div>
+        <br></br>
+        <button className="opciones">Principal</button>
+        <br></br>
+        <button className="opciones">Perfil</button>
+        <br></br>
+        <button className="opciones">Citas</button>
+      </div>
       )}
     </div>
   );
