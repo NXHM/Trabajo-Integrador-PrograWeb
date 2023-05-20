@@ -1,36 +1,103 @@
 .barraTareas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50px; /* Ancho de la barra de tareas */
-    background-color: #f1f1f1;
-    padding: 10px;
-    transition: width 0.3s ease; /* Transición suave para el cambio de ancho */
-  }
-  
-  .barraTareas.desplegado {
-    width: 200px; /* Ancho de la barra de tareas desplegada */
-  
-  }
-  
-  .botonDesplegar {
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .contenidoDesplegable {
-    text-align: center;
-    display: block;
-    text-decoration: none;
-  }
-  
-  .iconoTresBarras {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30px; /* Ancho de la barra de tareas */
+  background-color: #f1f1f1;
+  padding: 10px;
+  transition: width 0.3s ease; /* Transición suave para el cambio de ancho */
+}
+
+.barraTareas.desplegado {
+  width: 100px; /* Ancho de la barra de tareas desplegada */
+
+}
+
+.botonDesplegar {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contenidoDesplegable {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.iconoTresBarras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+
+}
+
+.barra {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  margin: 2px 0;
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+  font-weight: 700;
+}
+
+.barra-superior {
+  height: 60px;
+  background-color:rgb(243, 237, 247);
+  color: black;
+  font-size: 25px;
+  align-items: center;
+  justify-content:center;
+  display: flex;
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  top: 20px;
+  left: 130px;
+}
+
+p{
+  position: relative;
+  top: 20px;
+  left: 130px;
+}
+
+hr {
+  position: relative;
+  width: 86.3%;
+  top: 10px;
+}
+
+.crearCita{
+  float: right;
+  margin-top: 50px;
+  margin-right: 130px;
+  width: 10%;
+  border-radius: 30px;
+  border-width: 0px;
+  height: 40px;
+  background-color: rgb(103, 80, 164);
+  color: white;
+}
+
+.citasPasadas{
+  border-width: 1px;
+  background-color: white;
+  color:rgb(103, 80, 164);
+  float: right;
+  margin-top: 10px;
+  margin-right: 130px;
+  width: 10%;
+  border-radius: 30px;
+  height: 40px;
+}
