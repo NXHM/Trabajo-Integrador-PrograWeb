@@ -45,7 +45,6 @@
 }
 
 
-
 .barra-superior {
   height: 60px;
   background-color:rgb(243, 237, 247);
@@ -57,13 +56,13 @@
   text-align: center;
 }
 
-h1 {
+.Titulo {
   position: relative;
   top: 20px;
   left: 130px;
 }
 
-p{
+.subtitulo{
   position: relative;
   top: 20px;
   left: 130px;
@@ -106,4 +105,116 @@ hr {
   font-size: 100%;
   font-weight: bold;
   color: rgb(103, 80, 164);
+}
+
+.citaX{
+  width: 18%;
+  height: 425px;
+  margin-top: 50px;
+  margin-left: 130px;
+  border-width: 1px;
+  background-color: white;
+  border-color: rgb(103, 80, 164);
+  border-radius: 30px;
+  
+}
+
+.NombreProfe{
+  text-align: left;
+  background-color: aqua ;  
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 15px;
+}
+
+.fotoProfesor{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenerdorImagen{
+  height: 150px;
+  object-fit: cover;
+  background-color: gray;
+  
+}
+
+.cuentaProfe{
+  width: 60px;
+  background-color:rgb(103, 80, 164);
+  height: 60px;
+  border-radius: 50%;
+  color: #f1f1f1;
+  font-size: large;
+  align-items: center;
+  justify-content:center;
+  display: flex;
+  text-align: center;
+
+}
+
+.contenedorSuperior{
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+.inforProfe_Tabla{
+  width: 100%;
+  margin-left: 1%;
+  margin-bottom: 3%;
+}
+
+.contenedorCuenta{
+  width: 25%;
+  
+}
+
+.infoProfe{
+  text-align: left;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.carreraProfe{
+  text-align: left;
+  height: 30px;
+  font-size: 15px;
+}
+
+.fechaCita{
+  margin-top: 5%;
+  text-align: left;
+  height: 25px;
+  font-size: 15px;
+  margin-left: 2%;
+  font-weight: 650;
+}
+
+.cursoCita{
+  text-align: left;
+  height: 30px;
+  font-size: 13px;
+  margin-left: 2%;
+}
+
+.enlaceZoom{
+  margin-top: 20px;
+  display: flex;
+  margin-left: 2%;
+}
+
+.cancelarBoton{
+  border-width: 1px;
+  background-color: white;
+  color:rgb(103, 80, 164);
+  border-radius: 30px;
+  margin-top: 20px;
+  height: 40px;
+  width: 90px;
+  float: right;
+  margin-right: 20px;
 }
