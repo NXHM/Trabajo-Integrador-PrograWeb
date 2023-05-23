@@ -1,8 +1,8 @@
 import React from "react";
-import BarraTareas from "./BarraTareas";
-import BarraSuperior from './BarraSuperior';
+import BarraTareas from "./barras/BarraTareas";
+import BarraSuperior from './barras/BarraSuperior';
 import Table from "./infoProfe";
-
+import "./barras/citas.css";
 const App = () => {
   return (
     <div >
@@ -39,10 +39,6 @@ const App = () => {
 
 
     </div>
-
-    
-
-
   );
 };
 
