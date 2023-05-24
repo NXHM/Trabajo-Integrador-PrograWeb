@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from './App';
-import reportWebVitals from './reportWebVitals';
-import App from './front-end/pages/citas/AlumnoCitasPasadas.js';
 
+import reportWebVitals from './reportWebVitals';
+import PaginaBaseCitas from './front-end/pages/citas/AlumnoCitas.js';
+import VerCitas from './front-end/pages/citas/AlumnoCitas/AlumnoCitas.js';
+import PaginaCitasPasadas from './front-end/pages/citas/AlumnoCitasPasadas/AlumnoCitasPasadas.js';
+import PaginaCitasPasadasDocente from './front-end/pages/citas/DocenteCitas/DocenteCitas.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+/*
+<VerCitas/>
+<PaginaBaseCitas/>
+<PaginaCitasPasadas/>
+*/
 root.render(
   <React.StrictMode>
-    <App />
+    <PaginaCitasPasadasDocente/>
   </React.StrictMode>
 );
 
