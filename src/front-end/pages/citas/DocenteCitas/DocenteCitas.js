@@ -4,6 +4,7 @@ import BarraSuperior from '../barras/BarraSuperior';
 import "../barras/citas.css";
 
 import Table from "./infoAlumno.js";
+
 const PaginaCitasPasadasDocente = () => {
     return (
       <div >
@@ -22,7 +23,7 @@ const PaginaCitasPasadasDocente = () => {
           <Table />
   
           <div className="contenerdorImagen">
-            <img className="fotoProfesor" src="image.png"></img>
+            <img className="fotoProfesor" src="https://b7q5h9f5.rocketcdn.me/wp-content/uploads/2023/03/img_c_641ab2fcef1a8-NDLaLn-1024x683.jpeg"></img>
           </div>
   
           <div className="fechaCita">Lunes, 24 de abril de 2023 - 08:00 am</div>
