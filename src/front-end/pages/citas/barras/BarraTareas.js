@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './citas.css';
 
 const BarraTareas = () => {
   const [desplegado, setDesplegado] = useState(false);
