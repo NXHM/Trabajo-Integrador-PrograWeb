@@ -29,7 +29,6 @@ const PaginaCitasPasadas = () => {
           <div className="cursoCita" >Curso: Programacion Web</div>
   
           <a className="enlaceZoom" href="http://ulima.edu.pe" target="_blank" rel="noreferrer">Enlace a Zoom</a>
-          <div id="estadoCalificado">No calificado</div>  
           <button className="cancelarBoton" >Calificar</button>
           
         </button>

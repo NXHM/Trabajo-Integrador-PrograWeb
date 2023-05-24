@@ -108,7 +108,7 @@ hr {
 }
 
 .citaX{
-  width: 18%;
+  width: 300px;
   height: 425px;
   margin-top: 50px;
   margin-left: 130px;
@@ -155,6 +155,19 @@ hr {
 
 }
 
+.cuentaAlumno{
+  width: 60px;
+  background-color:rgb(103, 80, 164);
+  height: 60px;
+  border-radius: 50%;
+  color: #f1f1f1;
+  font-size: large;
+  align-items: center;
+  justify-content:center;
+  display: flex;
+  text-align: center;
+}
+
 .contenedorSuperior{
   display: flex;
   align-items: flex-start;
@@ -162,6 +175,12 @@ hr {
 }
 
 .inforProfe_Tabla{
+  width: 100%;
+  margin-left: 1%;
+  margin-bottom: 3%;
+}
+
+.inforAlumno_Tabla{
   width: 100%;
   margin-left: 1%;
   margin-bottom: 3%;
@@ -179,7 +198,20 @@ hr {
   font-weight: bold;
 }
 
+.infoAlumno{
+  text-align: left;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .carreraProfe{
+  text-align: left;
+  height: 30px;
+  font-size: 15px;
+}
+
+.carreraAlumno{
   text-align: left;
   height: 30px;
   font-size: 15px;
