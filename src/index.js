@@ -7,15 +7,20 @@ import PaginaBaseCitas from './front-end/pages/citas/AlumnoCitas.js';
 import VerCitas from './front-end/pages/citas/AlumnoCitas/AlumnoCitas.js';
 import PaginaCitasPasadas from './front-end/pages/citas/AlumnoCitasPasadas/AlumnoCitasPasadas.js';
 import PaginaCitasPasadasDocente from './front-end/pages/citas/DocenteCitas/DocenteCitas.js';
+import BarraSuperior from './front-end/pages/citas/barras/BarraSuperior';
+import BarraTareas from './front-end/pages/citas/barras/BarraTareas';
+import LoginTab from './front-end/pages/login/LoginTab';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 /*
 <VerCitas/>
 <PaginaBaseCitas/>
 <PaginaCitasPasadas/>
+<PaginaCitasPasadasDocente/>
 */
 root.render(
   <React.StrictMode>
-    <PaginaCitasPasadasDocente/>
+    
+    <LoginTab/>
   </React.StrictMode>
 );
 

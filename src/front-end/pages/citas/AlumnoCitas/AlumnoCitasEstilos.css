@@ -24,10 +24,8 @@
 #botonProgramarCita{
     /* Texto contenido */
 
-    width: 122px;
-    height: 20px;
 
-    /*font-family: 'Roboto';*/
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -36,22 +34,20 @@
     color: #FFFFFF;
     
     /*Boton*/
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px;
     gap: 8px;
-
+    
     position: absolute;
     width: 170px;
     height: 40px;
     left: 555px;
     top: 320px;
-
+    cursor: pointer;
     background: #6750A4;
     border-radius: 100px;
     border-color: transparent;
