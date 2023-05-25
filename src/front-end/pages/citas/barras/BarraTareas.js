@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './citas.css';
-
+import './Barras.css';
 const BarraTareas = () => {
   const [desplegado, setDesplegado] = useState(false);
 
