@@ -1,0 +1,250 @@
+.barraTareas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30px; /* Ancho de la barra de tareas */
+    background-color: #f1f1f1;
+    padding: 10px;
+    transition: width 0.3s ease; /* Transición suave para el cambio de ancho */
+  }
+  
+  .barraTareas.desplegado {
+    width: 100px; /* Ancho de la barra de tareas desplegada */
+  
+  }
+  
+  .botonDesplegar {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .contenidoDesplegable {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .iconoTresBarras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  
+  
+  }
+  
+  .barra {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    margin: 2px 0;
+  }
+  
+  
+  
+  .barra-superior {
+    height: 60px;
+    background-color:rgb(243, 237, 247);
+    color: black;
+    font-size: 25px;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    text-align: center;
+  }
+  
+  h1 {
+    position: relative;
+    top: 20px;
+    left: 120px;
+    font-family: Roboto, Arial;
+    font-weight: 0;
+  }
+  
+  hr {
+    position: relative;
+    width: 86.3%;
+    top: 10px;
+  }
+  
+  table{
+    /*border: black solid 1px;*/
+  
+  
+  }
+  
+  .foto {
+    border: black solid 1px;
+    width: 100px;
+  }
+  
+  .burbuja {
+    font-family: Roboto, Arial;
+    text-align: center;
+    background-color: #EADDFF;
+    border-radius: 100px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    color: #21005D;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .nombre {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    padding-left: 5px;
+  }
+  
+  .grado {
+    font-family: Roboto, Arial;
+    font-size: 13px;
+    color: #49454F;
+    padding-left: 5px;
+  }
+  
+  .foto {
+    width: 184px;
+    height: 151px;
+  }
+  
+  .texto {
+    width: 626px;
+    height: 151px;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    padding-left: 5px;
+  }
+  
+  .correo {
+    font-family: Roboto, Arial;
+    font-size: 13px;
+    position: relative;
+    top: -25px;
+    font-weight: 100;
+    padding-left: 10px;
+  }
+  
+  .correoe {
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    position: relative;
+    top: -90px;
+    font-weight: 400;
+    padding-left: 10px;
+    text-decoration-line: underline;
+  }
+  
+  .cursos {
+    font-family: Roboto, Arial;
+    font-size: 13px;
+    font-weight: 100;
+  }
+  
+  .opciones {
+    text-align: center;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    border: 1px solid #79747E;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    color: #49454F;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  .conf {
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+  }
+  
+  .subtit {
+    position: relative;
+    margin-left: 120px;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+  }
+  
+  .input {
+    width: 270px;
+    height: 50px;
+    border: rgb(103, 80, 164) 3px solid;
+    border-radius: 10px;
+    font-family: Roboto,Arial;
+    font-size: 16px;
+    padding-left: 10px;
+    position: relative;
+    margin-right: 30px;
+    
+   }
+  
+   .log1 {
+    font-family: Roboto,Arial;
+    font-size: 13px;
+    background-color: #FFF6FF;
+    color: rgb(103, 80, 164);
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+    left: 10px;
+  }
+  
+  .formato {
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    color: #49454F;
+    position: relative;
+    top: -19px;
+    left: 20px;
+  }
+  
+  .horas {
+    text-align: center;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    color: #49454F;
+    position: relative;
+    background: #E8DEF8;
+  }
+  
+  .conf2 {
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+    position: relative;
+    margin-top: -15px;
+    margin-left: 130px;
+  
+  }
+  
+  .duracion {
+    margin-left: 120px;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: -10px;
+  }
+  
+  .fondo {
+    background: #FEF7FF;
+    margin-left: 130px;
+    margin-top: 20px;
+    width: 1300px;
+  }
+  
+  .sinfondo {
+    margin-left: 130px;
+    margin-top: 20px;
+  }
