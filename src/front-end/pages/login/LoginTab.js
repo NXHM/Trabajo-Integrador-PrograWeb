@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
+
 const LoginTab = () => {
   return (
     <div>
@@ -11,7 +12,7 @@ const LoginTab = () => {
           </tr>
           <tr>
             <input id="contr" className='input' style={{top: -20}}></input>
-            <p className='log2' style={{width: 70, marginTop: -7, marginBottom: 0}}>Password</p>
+            <p className='log2' style={{width: 65, marginTop: -7, marginBottom: 0}}>Password</p>
           </tr>
           <tr>
             <p className='abajo'>Registro de nuevo usuario - Olvidé mi contraseña</p>

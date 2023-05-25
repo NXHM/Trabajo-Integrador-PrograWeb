@@ -11,7 +11,7 @@ h1 {
   height: 70px;
   border: rgb(103, 80, 164) 3px solid;
   border-radius: 10px;
-  font-family: Roboto, Arial;
+  font-family: Roboto,Arial;
   font-size: 30px;
   padding-left: 10px;
   position: relative;
@@ -20,7 +20,7 @@ h1 {
  .abajo {
   text-align: right;
   color: rgb(103, 80, 164);
-  font-family: Roboto, Arial;
+  font-family: Roboto,Arial;
   font-weight: bold;
   font-size: 13px;
   margin-bottom: 0;
@@ -68,7 +68,7 @@ button {
 }
 
 .log1 {
-  font-family: Roboto, Arial;
+  font-family: Roboto,Arial;
   font-size: 13px;
   background-color: #FFF6FF;
   color: rgb(103, 80, 164);
