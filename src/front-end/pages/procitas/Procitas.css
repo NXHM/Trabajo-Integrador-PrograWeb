@@ -1,0 +1,51 @@
+.pci p{
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.Pbcitas{
+    
+    background-color:rgb(247, 241, 241);
+    
+    height: 300px;
+    width: 1200px;
+    margin-left: 100px;
+
+}
+
+.Pbcitas #Titulo{
+    margin-left: 10px;
+}
+
+.caja img{
+    height: 90px;
+    width: 90px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.caja{
+    background-color: white;
+    border-color: black;
+    border-radius: 20px;
+    margin-left: 10px;
+    width: 500px;
+    height: 100px;
+}
+
+.caja #p1{
+    margin-top: -100px;
+    
+}
+
+.caja #p2{
+    margin-left: 250px;
+    
+    font-size: 20px;
+}
+
+
+.cant{
+    display: flex;
+    gap: 10px;
+}

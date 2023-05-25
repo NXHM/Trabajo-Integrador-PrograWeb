@@ -1,7 +1,8 @@
 import "./Pagina3.css";
 import Ingreso from "./Ingreso"
 import { useState } from "react";
-
+import BarraS from "../citas/barras/BarraSuperior";
+import BarraT from "../citas/barras/BarraTareas";
 
 const Pagina1 = () =>{
     return (
@@ -17,7 +18,6 @@ const Pagina1 = () =>{
         </div>
     );
 }
-
 
 const Pagina11 = () =>{
     return (
@@ -37,7 +37,6 @@ const Pagina11 = () =>{
     );
 }
 
-
 const Pagina31 = () =>{
     return (
         <div>
@@ -46,7 +45,6 @@ const Pagina31 = () =>{
         </div>
     );
 }
-
 
 const Barra = () =>{
     return  (
@@ -58,7 +56,6 @@ const Barra = () =>{
         </div>
     );
 }
-
 
 
 
@@ -103,7 +100,6 @@ const  Pagina3 = () => {
         setP2(false)
     }
 
-
     const handleclik = () =>{
         
         setderecha(!mderecha);
@@ -113,16 +109,10 @@ const  Pagina3 = () => {
     return(
         <div className="p3">
 
-            <div className="menu">
-                <img id="ico1"src="https://cdn-icons-png.flaticon.com/512/6499/6499731.png" alt="icono hamburguesa" onClick={handleclik}></img>
-                <p>Atencion a citas</p>
-                <img id="ico2"src="https://cdn-icons-png.flaticon.com/512/64/64572.png" alt="icono perfil"></img>
-            </div>
-
+            <BarraS/>
+            <BarraT/>
 
             <div className="container">
-                {mderecha && <Barra/>}
-
                 <div className={mderecha? "der":null}>
                     <div className="Titulos">
                         <p id="titulo1" > Mi perfil</p>
@@ -143,7 +133,6 @@ const  Pagina3 = () => {
                         </div>
                     </div>
 
-
                     <div className="is">
                         <p style={{color:color1}} onClick={camp1}>Datos de Usuario</p>
                         <p style={{color:color2}} onClick={camp2}>Universidad</p>
@@ -162,17 +151,9 @@ const  Pagina3 = () => {
 
             </div>
 
-
         </div>
     );
 }
 
 
-
 export default Pagina3;
-
-
-
-
-
-

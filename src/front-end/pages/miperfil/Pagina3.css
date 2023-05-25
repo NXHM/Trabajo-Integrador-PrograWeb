@@ -40,7 +40,6 @@
 }
 
 
-
 .Titulos #boton1p{
     border-color: blueviolet;
     border-radius: 20px;
@@ -79,7 +78,6 @@
     color:black;
 }
 
-
 .p3i1{
     
     height: 40px;
@@ -88,11 +86,9 @@
     border-width: 1px;
 }
 
-
 .p3i4{
     color:black;
 }
-
 
 .p3i4{
     height: 40px;
@@ -103,11 +99,9 @@
 }
 
 
-
 .ip p{
     font-weight:bold;
 }
-
 
 .p3l2{
     color:blueviolet;
@@ -120,7 +114,6 @@
     border-color: blueviolet;
 }
 
-
 .p3l3{
     color:blueviolet;
 }
@@ -132,24 +125,20 @@
 }
 
 
-
 .is > div{
     display: inline-block;
     margin-right: 20px;
 }
 
 
-
 .is{
     margin-top: 100px;
 }
-
 
 .is p{
     display: inline-block;
     margin-right: 30px;
 }
-
 
 .is p:hover{
     border-bottom: 2px solid purple;
@@ -160,7 +149,6 @@
     
     gap: 10px;
   }
-
 
 .pagina11_1{
     display: flex;
@@ -179,7 +167,6 @@
     width: 300px;
 }
 
-
 .p5i1{
     border-color: black;
     border-width: 1px;
@@ -196,17 +183,14 @@
     font-size: 20px;
 }
 
-
 .menu #ico1{
     height: 50px;
     margin-left: -50px;
 }
 
-
 .menu #ico2{
     height: 50px;
 }
-
 
 .der{
     margin-left: 100px;
@@ -220,9 +204,9 @@
 }
 
 
-
 .container{
     display: flex;
+    margin-left: 20px;
     
     
 }
