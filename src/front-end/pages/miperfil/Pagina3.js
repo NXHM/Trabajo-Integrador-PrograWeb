@@ -130,6 +130,7 @@ const  Pagina3 = () => {
                         <Ingreso name="Numero" tipo={true} lname="p3l4" iname="p3i4"/>
                         <div className="ip2">
                             <img src="https://okdiario.com/img/2021/12/15/los-10-cientificos-mas-locos-de-la-historia.jpg" alt="cientifico"></img>
+                            <span id="adjuntarFoto">Adjuntar Foto</span>
                         </div>
                     </div>
 
