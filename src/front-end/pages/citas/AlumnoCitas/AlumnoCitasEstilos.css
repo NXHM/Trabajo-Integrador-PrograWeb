@@ -20,7 +20,16 @@
 
     color: #000000;
 }
-
+hr {
+    position: relative;
+    width: 86.3%;
+    top: 10px;
+  }
+  .Titulo {
+    position: relative;
+    top: 20px;
+    transform: translateX(-537px);
+  }  
 #botonProgramarCita{
     /* Texto contenido */
 
