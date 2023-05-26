@@ -84,3 +84,10 @@
   color: rgb(103, 80, 164);
 
 }
+#miniUsuario{
+    position: absolute;
+    transform: translateX(16em);
+  
+    display: flex;
+    margin: auto;
+  }
