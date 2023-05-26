@@ -15,19 +15,19 @@ function CambioContrasena() {
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
         >
-          Datos de usuario
+          Tab 1
         </button>
         <button
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(2)}
         >
-          Universidad
+          Tab 2
         </button>
         <button
           className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(3)}
         >
-          Presentación
+          Tab 3
         </button>
       </div>
 
@@ -35,9 +35,13 @@ function CambioContrasena() {
         <div
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
-          <input type = "text" value = "" placeholder = "Usuario"/>
-          <br/>
-
+          <h2>Content 1</h2>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
+            vel voluptatum?
+          </p>
         </div>
 
         <div
@@ -69,5 +73,5 @@ function CambioContrasena() {
     </div>
   );
 }
-  
+
 export default CambioContrasena;

@@ -1,5 +1,6 @@
 import React from 'react';
 import './citas.css';
+import './Barras.css';
 const BarraSuperior = () => {
   return (
 

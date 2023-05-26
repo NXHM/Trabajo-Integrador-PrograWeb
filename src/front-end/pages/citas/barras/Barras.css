@@ -1,0 +1,63 @@
+.barraTareas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30px; /* Ancho de la barra de tareas */
+    background-color: #f1f1f1;
+    padding: 10px;
+    transition: width 0.3s ease; /* Transición suave para el cambio de ancho */
+}
+  
+  .barraTareas.desplegado {
+    width: 100px; /* Ancho de la barra de tareas desplegada */
+  
+  }
+  
+  .botonDesplegar {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .contenidoDesplegable {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .iconoTresBarras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  
+  
+  }
+  .barra {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    margin: 2px 0;
+  }
+  
+  .barra-superior {
+    height: 60px;
+    background-color:rgb(243, 237, 247);
+    color: black;
+    font-size: 25px;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    text-align: center;
+  }
+  .opciones{
+    margin-top: 40px;
+    background-color: #f1f1f1;
+    border-width: 0px;
+    font-size: 100%;
+    font-weight: bold;
+    color: rgb(103, 80, 164);
+  }
