@@ -64,7 +64,7 @@
 #miniUsuario{
   position: absolute;
   transform: translateX(16em);
-
+  /* float: right; */
   display: flex;
   margin: auto;
 }
