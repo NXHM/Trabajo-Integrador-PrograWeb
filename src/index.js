@@ -12,6 +12,7 @@ import BarraTareas from './front-end/pages/citas/barras/BarraTareas';
 import LoginTab from './front-end/pages/login/LoginTab';
 import Pagina3 from './front-end/pages/miperfil/Pagina3';
 import Prcitas from './front-end/pages/procitas/Procitas';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 /*
 <VerCitas/>
@@ -22,7 +23,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   
-    <PaginaBaseCitas/>
+    <PaginaCitasPasadasDocente/>
   </React.StrictMode>
 );
 
