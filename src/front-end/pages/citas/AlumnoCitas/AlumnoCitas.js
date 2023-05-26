@@ -13,6 +13,9 @@ function MostrarCitasExistentes(){
     //verificar si hay citas guardadas-dps
     return(
         <div>
+            <h1 className="Titulo">Mis citas</h1>
+
+            <hr/>
             <div id="noCitas">Actualmente no tiene citas de Asesoría reservadas</div>
             <button id="botonProgramarCita" onClick={handleClick}>Programar una Cita</button>
 
@@ -23,7 +26,8 @@ function MostrarCitasExistentes(){
 function VerCitas() {
     return(
         <div>
-            
+            <BarraSuperior/>
+            <BarraTareas/>
             <MostrarCitasExistentes/>
         </div>
     );
