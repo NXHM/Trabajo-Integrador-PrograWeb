@@ -1,14 +1,12 @@
-import React, { useState } from "react";
-
 import './Barras.css';
 
 
-const BarraTareas = (props) => {
+const BarraTareas = ({ desplegado }) => {
   
   return (
-    <div className={`barraTareas ${props.desplegado ? "desplegado" : ""}`}>
+    <div className={`barraTareas ${desplegado ? "desplegado" : ""}`}>
       
-      {props.desplegado && (
+      {desplegado && (
         <ul className="contenidoDesplegable">
           <li>
             <button className="opciones">Principal</button>
@@ -24,9 +22,9 @@ const BarraTareas = (props) => {
     </div>
   );
 };
-const BarraSuperior = (props) => {
+const BarraSuperior = ({ desplegado, setDesplegado }) => {
   const toggleDesplegado = () => {
-    props.setDesplegado(!props.desplegado);
+    setDesplegado(!desplegado);
   };
   return (
 
@@ -44,16 +42,15 @@ const BarraSuperior = (props) => {
             <div class="barra"></div>
           </div>
         </div>
-      <hr className={`lineaSeparadora ${props.desplegado ? "desplegado" : ""}`}/>
+      <hr className={`lineaSeparadora ${desplegado ? "desplegado" : ""}`}/>
     </div>
 
   );
 };
 
-function Barras(){
-  const [desplegado, setDesplegado] = useState(false);
+function Barras({ desplegado, setDesplegado }){
+  //const [desplegado, setDesplegado] = useState(false);
   return(
-    
     <div>
       <BarraSuperior desplegado={desplegado} setDesplegado={setDesplegado} />
       <BarraTareas desplegado={desplegado} />

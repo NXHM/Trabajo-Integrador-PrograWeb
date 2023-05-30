@@ -1,7 +1,6 @@
 import React from "react";
-import BarraTareas from "../barras/BarraTareas";
-import BarraSuperior from '../barras/BarraSuperior';
-import Barras from '../nuevasBarras/Barras.js';
+
+//import Barras from '../nuevasBarras/Barras.js';
 //import baseDatos
 
 import  "./AlumnoCitasEstilos.css";
@@ -23,11 +22,11 @@ function MostrarCitasExistentes(){
         </div>
     );
 }
-function VerCitas() {
+function VerCitas({ desplegado }) {
     return(
         <div>
-            <Barras/>
-            <MostrarCitasExistentes/>
+            
+            <MostrarCitasExistentes desplegado={ desplegado }/>
         </div>
     );
 }
