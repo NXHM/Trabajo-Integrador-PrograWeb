@@ -16,7 +16,7 @@
   
   }
   
-  .botonDesplegar {
+  #botonDesplegar {
     z-index: 3;
     cursor: pointer;
     font-weight: bold;
@@ -25,7 +25,7 @@
   
 
   
-  .iconoTresBarras {
+  #iconoTresBarras {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,31 +61,33 @@
 } 
 
   
-  .barra-superior {
+  #barra-superior {
     height: 60px;
     background-color:rgb(243, 237, 247);
     color: black;
     font-size: 25px;
     align-items: center;
     justify-content:center;
-    display: fixed;
+    display: flex; /*fixed*/
     text-align: center;
     position: relative;
     width: 100%;
 }
-.barraTareas.desplegado .contenidoDesplegable {
-  opacity: 1; /* Muestra las opciones del menú desplegable cuando la barra lateral está desplegada */
-}
-.contenidoDesplegable {
+
+#contenidoDesplegable {
   text-align: center;
   display: block;
   text-decoration: none;
   margin-top: 90px;
   list-style: none;
   text-align: left; 
-  opacity: 0; /* Inicialmente oculta las opciones del menú desplegable */
-  transition: opacity 1s ease; /* Transición suave para el cambio de opacidad */
+  /*opacity: 0; /* Inicialmente oculta las opciones del menú desplegable 
+  transition: opacity 2s ease;  Transición suave para el cambio de opacidad */
 }
+/*.barraTareas.desplegado .contenidoDesplegable {
+  opacity: 1; 
+}*/
+
 .opciones {
   display: block;
   margin: 10px 0;
@@ -108,7 +110,7 @@
     margin: auto;
     cursor: pointer;  
   }
-#miniUsuario:hover{
+/*#miniUsuario:hover{
   transform: scale(1.2);
   position: fixed;
-}
+}*/
