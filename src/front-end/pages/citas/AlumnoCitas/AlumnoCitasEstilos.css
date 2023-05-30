@@ -1,3 +1,4 @@
+
 #noCitas{
     position: absolute;
     width: 496px;
@@ -20,6 +21,16 @@
 
     color: #000000;
 }
+
+.Titulo {
+  display: flex;
+  position: relative;
+  top: 20px;
+  left: 8%;
+  width: max-content;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}  
 
 #botonProgramarCita{
     /* Texto contenido */

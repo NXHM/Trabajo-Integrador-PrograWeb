@@ -1,0 +1,113 @@
+.barraTareas {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30px; /* Ancho de la barra de tareas */
+    background-color: #D9D9D9;
+    padding: 10px;
+    transition: width 0.3s ease;
+}
+  
+.barraTareas.desplegado {
+    width: 146px; /* Ancho de la barra de tareas desplegada */
+    
+}
+  
+#botonDesplegar {
+    z-index: 3;
+    cursor: pointer;
+    font-weight: bold;
+    position: fixed
+}
+  
+
+  
+#iconoTresBarras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: fixed;
+    left: 15px;
+    top: 21px;
+
+  
+}
+.barra {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin: 2px 2px 2px 2px;
+}
+.lineaSeparadora{
+  
+  position: relative;
+  width: 86.3%;
+  top: 85px;
+  left: 4%;
+  transition: all 0.3s ease;    
+}
+.lineaSeparadora.desplegado{
+    left: 13.5%;
+    width: 77%;   
+}
+
+  
+#barra-superior {
+    height: 60px;
+    background-color:rgb(243, 237, 247);
+    color: black;
+    font-size: 25px;
+    align-items: center;
+    justify-content:center;
+    display: flex; /*fixed*/
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+#contenidoDesplegable {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin-top: 90px;
+  list-style: none;
+  text-align: left; 
+  /*opacity: 0; /* Inicialmente oculta las opciones del menú desplegable 
+  transition: opacity 2s ease;  Transición suave para el cambio de opacidad */
+}
+/*.barraTareas.desplegado .contenidoDesplegable {
+  opacity: 1; 
+}*/
+
+.opciones {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 10px 10px 5px; 
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: bold;
+  color: #6750A4;
+  text-align: left;
+}
+.opciones:hover {
+  text-decoration: underline;
+  
+}
+#miniUsuario{
+    position: fixed;
+    right: 50%;
+    margin: auto;
+    cursor: pointer;  
+  }
+/*#miniUsuario:hover{
+  transform: scale(1.2);
+  position: fixed;
+}*/

@@ -1,0 +1,270 @@
+.Titulo  {
+    position: absolute;
+    width: 488px;
+    height: 20px;
+    left: 396px;
+    top: 59px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+    text-emphasis-color: black;
+    /* identical to box height, or 83% */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+    
+    /* identical to box height, or 83% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+  }
+  
+.Sub1 {
+    text-align: center;
+    /* Agrega aquí los estilos adicionales para los títulos */
+    position: absolute;
+    width: 196px;
+    height: 20px;
+    left: 542px;
+    top: 119px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+/* identical to box height, or 83% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+  }
+
+  
+  h3 {
+    /* Agrega aquí los estilos para los subtítulos h3 */
+    position: absolute;
+    width: 95px;
+    height: 20px;
+    left: 313px;
+    top: 350px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+    
+    display: flex;
+
+    
+    color: #6750A4;
+    
+/* identical to box height, or 167% */
+
+;
+  }
+  
+  /* Estilos para los campos de entrada */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    border: 2px solid purple;
+    padding: 5px;
+    width: 291px;
+    /* Agrega aquí los estilos adicionales para los campos de entrada */
+  }
+  
+  input[type="submit"] {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 105px;
+height: 40px;
+left: 843px;
+top: 643px;
+
+/* M3/sys/light/secondary-container */
+
+background: #E8DEF8;
+border-radius: 100px;
+    /* Agrega aquí los estilos adicionales para el botón de envío */
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    color: purple;
+    border-radius: 4px 4px 0px 0px;
+    /* Agrega aquí los estilos adicionales para las etiquetas de los campos */
+  }
+
+
+.correo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: relative;
+    width: 291px;
+    height: 76px;
+    left: 313px;
+    top: 180px;
+    
+    border-radius: 4px 4px 0px 0px;
+
+    width: 99px;
+    height: 16px;
+
+
+/* M3/body/small */
+
+
+}
+.correo12{
+    display: flex;
+    width: 99px;
+height: 16px;
+
+/* M3/body/small */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+left: 313px;
+top: 180px;
+/* identical to box height, or 133% */
+
+
+/* M3/sys/light/primary */
+
+color: #6750A4;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.Pass{
+  font-family: 'Roboto';  
+  font-size: 12px;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 291px;
+height: 76px;
+left: 313px;
+top: 100px;
+
+border-radius: 4px 4px 0px 0px;
+
+
+/* Text field
+
+Use a text field when someone needs to enter text into a UI, such as filling in contact or payment information.
+
+🛠 Additional options
+Support text - you can toggle supporting text between hide and show.
+*/
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 291px;
+height: 76px;
+left: 657px;
+top: 180px;
+
+border-radius: 4px 4px 0px 0px;
+
+}
+.datosxd{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 291px;
+height: 76px;
+left: 313px;
+top: 388px;
+
+border-radius: 4px 4px 0px 0px;
+
+
+/* Text field
+
+Use a text field when someone needs to enter text into a UI, such as filling in contact or payment information.
+
+🛠 Additional options
+Support text - you can toggle supporting text between hide and show.
+*/
+
+/* Auto layout */
+
+
+
+/* Text field
+
+Use a text field when someone needs to enter text into a UI, such as filling in contact or payment information.
+
+🛠 Additional options
+Support text - you can toggle supporting text between hide and show.
+*/
+
+/* Auto layout */
+
+
+}
+.Apexd{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 291px;
+height: 76px;
+left: 657px;
+top: 386px;
+
+border-radius: 4px 4px 0px 0px;
+}
+.todo{
+    left: 100px; 
+    position: relative;   
+}
