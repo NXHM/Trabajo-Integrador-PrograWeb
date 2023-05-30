@@ -8,7 +8,7 @@ function handleClick(){
     //Que habrá la pagina donde se programa citas
     window.alert("Proximamente-programar cita");
 }
-function MostrarCitasExistentes(){
+function MostrarCitasExistentes({desplegado}){
     //verificar si hay citas guardadas-dps
     return(
         <div>

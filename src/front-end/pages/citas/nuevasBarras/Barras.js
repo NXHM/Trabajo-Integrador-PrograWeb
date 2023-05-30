@@ -4,7 +4,7 @@ import './Barras.css';
 const BarraTareas = ({ desplegado }) => {
   
   return (
-    <div id={`barraTareas${desplegado ? "-desplegado" : ""}`}>
+    <div className={`barraTareas ${desplegado ? "desplegado" : ""}`}>
       
       {desplegado && (
         <ul id="contenidoDesplegable">
@@ -42,7 +42,7 @@ const BarraSuperior = ({ desplegado, setDesplegado }) => {
             <div class="barra"></div>
           </div>
         </div>
-      <hr id={`lineaSeparadora${desplegado ?"-desplegado" : ""}`}/>
+      <hr className={`lineaSeparadora ${desplegado ?"desplegado" : ""}`}/>
     </div>
 
   );

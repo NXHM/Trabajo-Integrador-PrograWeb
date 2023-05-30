@@ -10,7 +10,10 @@ function App(){
     return(
         <div>
             <Barras desplegado={desplegado} setDesplegado={setDesplegado} />
-            <VerCitas desplegado={desplegado}/>
+            <div className={`paginaContenido ${desplegado ? "desplegado" : ""}`} desplegado={desplegado}>
+                <VerCitas />
+            </div>
+            
         </div>
         
     );
