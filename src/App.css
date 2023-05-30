@@ -1,0 +1,11 @@
+/*Mover contenido*/
+.paginaContenido{
+    left: 4%;
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.paginaContenido .desplegado{
+    left: 13.5%;
+}
