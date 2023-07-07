@@ -1,0 +1,12 @@
+{
+    "data":
+    {
+        "citas":[
+            {
+                "fotoProfesor": "https://qespacio.com/blog/wp-content/uploads/2019/10/profesor-particular-ingles.jpg",
+                "fechaCita":"14/06/2023",
+                "cursoCita": "enlace Zoom"}
+        ]
+            
+    }
+}
