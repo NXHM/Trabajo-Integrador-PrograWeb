@@ -1,0 +1,96 @@
+#mi_perfil *, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#mi_perfil body {
+  background: #fff;
+}
+
+#mi_perfil .container-2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 1200px;
+  height: 270px;
+  margin: 0 0 0 170px;
+  word-break: break-all;
+}
+
+#mi_perfil .bloc-tabs {
+  display: flex;
+}
+
+#mi_perfil .tabs {
+  padding: 15px 20px 15px 20px;
+  text-align: center;
+  width: max-content;
+  background: #FEF7FF;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  color: #49454F;
+}
+
+#mi_perfil .active-tabs  {
+  background: #FEF7FF;
+  border-bottom: 1px solid transparent;
+  color: #6750A4;
+}
+
+#mi_perfil .active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%) translateY(51px);
+  width: calc(65%);
+  height: 5px;
+  background: #6750A4;
+}
+
+#mi_perfil button {
+  border: none;
+}
+
+#mi_perfil .content-tabs {
+  flex-grow : 1;
+}
+
+#mi_perfil .content {
+  background: #FEF7FF;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: 20px 0 0 20px;
+}
+
+#mi_perfil .content h2 {
+  padding: 0px 0 5px 0px;
+}
+
+#mi_perfil .content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+
+#mi_perfil .content p {
+  width: 100%;
+  height: 100%;
+}
+
+#mi_perfil .content .second-column {
+  vertical-align: top;
+  border-left: 1px solid #CAC4D0;
+  padding: 0 0 0 30px;
+}
+
+#mi_perfil .active-content {
+  display: block;
+}

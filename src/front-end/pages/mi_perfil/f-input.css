@@ -1,0 +1,43 @@
+#mi_perfil .f-input[type=text] {
+    width: 252px;
+    height: 56px;
+    border-radius: 4px;
+    border: 2px solid #6750A4;
+    padding: 0 0 0 18.5px;
+    margin: 20px 30px 10px 0;
+    font-size: 12px;
+}
+
+#mi_perfil .f-input[type=text]:focus {
+    outline-color: #6750A4;
+}
+
+#mi_perfil .f-label {
+    background-color: white;
+    width: max-content;
+    position: absolute;
+    transform: translateX(-270px) translateY(12px);
+    padding: 0 7px 0 7px;
+    font-size: 12px;
+    color: #6750A4;
+}
+
+/* Container 2 */
+#mi_perfil .container-2 .f-input,
+#mi_perfil .container-2 .f-label {
+    background-color: #FEF7FF;
+}
+
+#mi_perfil .f-input-search[type=text] {
+    width: 392px;
+    padding: 0 0 0 50px;
+}
+
+#mi_perfil .f-label-search {
+    transform: translateX(-411px) translateY(12px);
+}
+
+#mi_perfil .search-icon {
+    position: absolute;
+    transform: translateX(-403px) translateY(220%);
+}

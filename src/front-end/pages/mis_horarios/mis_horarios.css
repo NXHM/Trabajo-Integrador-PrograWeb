@@ -1,0 +1,44 @@
+#mis_horarios .container-3 {
+    width: 1200px;
+    padding: 30px 0 0 0;
+    margin: 50px 0 50px 170px;
+}
+
+#mis_horarios .container-4 {
+    background-color: #FEF7FF;
+    width: 970px;
+    padding: 20px 0 0 0;
+    margin: 0 0 0 170px;
+}
+
+#mis_horarios #btn-agregar {
+    position:absolute;
+    transform: translateX(90px) translateY(30px);
+    background-color: white;
+    border: 1px solid #6750A4;
+    border-radius: 100px;
+    padding: 8px 20px;
+    color: #6750A4;
+}
+
+#mis_horarios .nbtn {
+    background-color: #EADDFF;
+    border: none;
+    border-radius: 100px;
+    margin: 0 10px 20px 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+#mis_horarios .xbtn {
+    float: right;
+    background: none;
+    border: none;
+    transition-duration: 0.2s;
+    color: #1D192B;
+    padding: 10px 35px 0 0;
+}
+
+#mis_horarios .xbtn:hover {
+    color: #6750A4;
+}
