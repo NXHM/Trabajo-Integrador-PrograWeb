@@ -1,46 +1,39 @@
-import {useState} from "react";
+import {useState, useEffect} from 'react';
 import './mi_perfil.css';
 import './tabs.css';
 import './f-input.css';
 
-function verificarEstado(response) {
-  if (!response.ok) {
-      throw Error("Ocurrio un error: " + response.statusText);
-  }
-  return response;
-}
-
-function procesarDato(data) {
-  alert("La información del usuario ha sido actualizada.\n\nCampos actualizados:" + data);
-}
-
-function handleError(error) {
-  console.log("Ocurrio un error: " + error);
-}
-
-function handleSubmit(evt) {
-  evt.preventDefault();
-  let myForm = document.getElementById("my-form");
-  let myFormData = new FormData(myForm);
-  let objJson=JSON.stringify(Object.fromEntries(myFormData));
-
-  fetch("http://localhost:3001/mi-perfil",{
-      method: 'POST',
-      body: objJson,
-      headers: {
-      "Content-Type": "application/json"
-      }
-  })
-  .then(verificarEstado)
-  .then(response => response.text())
-  .then(procesarDato)
-  .catch(handleError);
-}
-
-// ---------------------------------------------------------------
-
 function MiPerfil() {
   const [toggleState, setToggleState] = useState(1);
+
+  ///////////////////////////////////////////////////
+
+  const [usuarios, setUsuarios] = useState([]);
+
+  function checkStatus(response) {
+    if (!response.ok) {
+      throw Error("Error en la solicitud: " + response.statusText);
+    }
+    return response;
+  }
+
+  function handleError(err) {
+    alert("Error en la solicitud. " + err);
+  }
+  
+  function mostrarUsuario() {
+    fetch("http://localhost:3001/mostrar-usuario")
+      .then(checkStatus)
+      .then(response => response.json())
+      .then(data => setUsuarios(data))
+      .catch(handleError)
+  }
+
+  useEffect(() => {
+    mostrarUsuario();
+  }, []);
+
+  //////////////////////////////////////////////////
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -59,7 +52,9 @@ function MiPerfil() {
         <tbody>
         <tr>
           <td>
-            <input type="text" id="nombres" name="nombres" className="f-input"/>
+            {usuarios.map(usuario => (
+            <input type="text" id="nombres" name="nombres" className="f-input">{usuario.nombres}</input>
+            ))}
             <label for="nombres" className="f-label">Nombres</label>
 
             <br/>
