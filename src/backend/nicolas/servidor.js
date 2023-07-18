@@ -1,16 +1,18 @@
-const express = require("express");  //importar
-const cors = require('cors');
+// const express = require("express");  //importar
+import express from 'express';
+import cors from 'cors';
 const app = express() //llamar la libreria
 // Importan su endpoint aca
 const port = 3001;  //puerto
-const fs = require('fs');
+import fd from 'fs';
+import bodyParser from 'body-parser';
 
 app.use(cors({
     origin: "http://localhost:3000",
     optionsSuccessStatus: 200
 }))
 
-var bodyParser = require('body-parser')
+
 app.use(bodyParser.json()); // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
     extended: true
@@ -39,8 +41,7 @@ app.get('/consultar-citas', function (req,res) {
                             <button className="cancelarBoton">Calificar</button>
                         </button>`
             }
-            res.send(citas    
-            );
+            res.send(citas);
         }
     });
 });

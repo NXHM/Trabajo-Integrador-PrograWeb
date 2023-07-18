@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
-import PaginaBaseCitas from './front-end/pages/citas/AlumnoCitas.js';
+/*import PaginaBaseCitas from './front-end/pages/citas/AlumnoCitas.js';
 import VerCitas from './front-end/pages/citas/AlumnoCitas/AlumnoCitas.js';
 import PaginaCitasPasadas from './front-end/pages/citas/AlumnoCitasPasadas/AlumnoCitasPasadas.js';
 import PaginaCitasPasadasDocente from './front-end/pages/citas/DocenteCitas/DocenteCitas.js';
@@ -13,7 +13,7 @@ import LoginTab from './front-end/pages/login/LoginTab';
 import Pagina3 from './front-end/pages/miperfil/Pagina3';
 import Prcitas from './front-end/pages/procitas/Procitas';
 import ReservaFecha from './front-end/pages/reserva/reservaFecha.js';
-import MisHorarios from './front-end/pages/mishorarios/mishorarios.js';
+import MisHorarios from './front-end/pages/mishorarios/mishorarios.js';*/
 import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 /*
