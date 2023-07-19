@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
-import PaginaBaseCitas from './front-end/pages/citas/AlumnoCitas.js';
-import VerCitas from './front-end/pages/citas/AlumnoCitas/AlumnoCitas.js';
-import PaginaCitasPasadas from './front-end/pages/citas/AlumnoCitasPasadas/AlumnoCitasPasadas.js';
-import PaginaCitasPasadasDocente from './front-end/pages/citas/DocenteCitas/DocenteCitas.js';
-import BarraSuperior from './front-end/pages/citas/barras/BarraSuperior';
-import BarraTareas from './front-end/pages/citas/barras/BarraTareas';
-import LoginTab from './front-end/pages/login/LoginTab';
-import Pagina3 from './front-end/pages/miperfil/Pagina3';
-import Prcitas from './front-end/pages/procitas/Procitas';
-import ReservaFecha from './front-end/pages/reserva/reservaFecha.js';
-import MisHorarios from './front-end/pages/mishorarios/mishorarios.js';
+import PaginaBaseCitas from './frontend/pages/citas/AlumnoCitas.js';
+import VerCitas from './frontend/pages/citas/AlumnoCitas/AlumnoCitas.js';
+import PaginaCitasPasadas from './frontend/pages/citas/AlumnoCitasPasadas/AlumnoCitasPasadas.js';
+import PaginaCitasPasadasDocente from './frontend/pages/citas/DocenteCitas/DocenteCitas.js';
+import BarraSuperior from './frontend/pages/citas/barras/BarraSuperior';
+import BarraTareas from './frontend/pages/citas/barras/BarraTareas';
+import LoginTab from './frontend/pages/login/LoginTab';
+import Pagina3 from './frontend/pages/miperfil/Pagina3';
+import Prcitas from './frontend/pages/procitas/Procitas';
+import ReservaFecha from './frontend/pages/reserva/reservaFecha.js';
+import MisHorarios from './frontend/pages/mis_horarios/mis_horarios.js';
 import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 /*

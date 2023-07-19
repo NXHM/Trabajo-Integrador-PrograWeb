@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import './mi_perfil.css';
 import './tabs.css';
 import './f-input.css';
@@ -6,45 +6,15 @@ import './f-input.css';
 function MiPerfil() {
   const [toggleState, setToggleState] = useState(1);
 
-  ///////////////////////////////////////////////////
-
-  const [usuarios, setUsuarios] = useState([]);
-
-  function checkStatus(response) {
-    if (!response.ok) {
-      throw Error("Error en la solicitud: " + response.statusText);
-    }
-    return response;
-  }
-
-  function handleError(err) {
-    alert("Error en la solicitud. " + err);
-  }
-  
-  function mostrarUsuario() {
-    fetch("http://localhost:3001/mostrar-usuario")
-      .then(checkStatus)
-      .then(response => response.json())
-      .then(data => setUsuarios(data))
-      .catch(handleError)
-  }
-
-  useEffect(() => {
-    mostrarUsuario();
-  }, []);
-
-  //////////////////////////////////////////////////
-
   const toggleTab = (index) => {
     setToggleState(index);
   };
 
   return (
     <div id="mi_perfil">
-      <form id="my-form" method="post" action="http://localhost:3001/mi-perfil">
       <div className="container-1">
         <p className="p-title">Mi perfil</p>
-        <button id="btn-guardar" onClick={handleSubmit}>Guardar</button>
+        <button id="btn-guardar">Guardar</button>
         <hr className="hr"></hr>
         <p className="p">Información personal</p>
 
@@ -52,9 +22,7 @@ function MiPerfil() {
         <tbody>
         <tr>
           <td>
-            {usuarios.map(usuario => (
-            <input type="text" id="nombres" name="nombres" className="f-input">{usuario.nombres}</input>
-            ))}
+            <input type="text" id="nombres" name="nombres" className="f-input"></input>
             <label for="nombres" className="f-label">Nombres</label>
 
             <br/>
@@ -166,7 +134,6 @@ function MiPerfil() {
           </div>
         </div>
       </div>
-    </form>
     </div>
   );
 }
