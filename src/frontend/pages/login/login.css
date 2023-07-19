@@ -1,92 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-h1 {
+h1.title {
   position: relative;
-  top: 90px;
   text-align:center;
   font-family: Roboto,Arial;
+  margin: 24px auto !important;
 }
 
-.input {
-  width: 380px;
-  height: 70px;
-  border: rgb(103, 80, 164) 3px solid;
-  border-radius: 10px;
+.inputLogin {
+  width: 100%;
+  height: 56px;
+  border: rgb(103, 80, 164) 3px solid !important;
+  border-radius: 4px;
   font-family: Roboto,Arial;
-  font-size: 30px;
-  padding-left: 10px;
+  font-size: 16px;
+  padding: 2px !important;
   position: relative;
+  box-sizing: border-box;
+  
  }
 
- .abajo {
+ .RegistroLogin {
   text-align: right;
   color: rgb(103, 80, 164);
   font-family: Roboto,Arial;
   font-weight: bold;
   font-size: 13px;
-  margin-bottom: 0;
-  margin-top: -20px;
 }
 
- table{
+ table.logintable{
   margin-left: auto;
   margin-right: auto;
  }
 
  .salir {
-  width: 100px;
   border-radius: 30px;
   border-width: 0px;
   height: 40px;
   background-color: white;
   color: rgb(103, 80, 164);
   font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .blanco {
-  width: 100px;
   border-radius: 30px;
   border-width: 0px;
   height: 40px;
   background-color: white;
   color: white;
   font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .ingresar {
-  width: 100px;
   border-radius: 30px;
   border-width: 0px;
   height: 40px;
   background-color: #F1E0FF;
   color: black;
   font-weight: bold;
-}
-
-button {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.log1 {
+
+.log1LoginLabel {
   font-family: Roboto,Arial;
   font-size: 13px;
   background-color: #FFF6FF;
   color: rgb(103, 80, 164);
-  position: relative;
+  position: absolute;
   font-weight: 600;
   z-index: 1;
-  top: -98px;
+  top: -19px;
   left: 10px;
+  display: inline-block;
+  padding: 0 4px;
 }
 
-.log2 {
-  font-family: Roboto,Arial;
-  font-size: 13px;
-  background-color: #FFF6FF;
-  color: rgb(103, 80, 164);
+.input_wrap {
   position: relative;
-  font-weight: 600;
-  z-index: 1;
-  top: -98px;
-  left: 10px;
 }

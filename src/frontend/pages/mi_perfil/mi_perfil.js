@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import './mi_perfil.css';
 import './tabs.css';
 import './f-input.css';
@@ -35,7 +35,7 @@ function MiPerfil() {
     <div id="mi_perfil">
       <div className="container-1">
         <p className="p-title">Mi perfil</p>
-        <button id="btn-guardar" onClick={handleSubmit}>Guardar</button>
+        <button id="btn-guardar">Guardar</button>
         <hr className="hr"></hr>
         <p className="p">Información personal</p>
 

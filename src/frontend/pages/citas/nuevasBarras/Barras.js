@@ -1,8 +1,8 @@
 import './Barras.css';
+import {useLocation} from "react-router-dom";
 
 
 const BarraTareas = ({ desplegado }) => {
-  
   return (
     <div className={`barraTareas ${desplegado ? "desplegado" : ""}`}>
       
@@ -50,6 +50,13 @@ const BarraSuperior = ({ desplegado, setDesplegado }) => {
 
 function Barras({ desplegado, setDesplegado }){
   //const [desplegado, setDesplegado] = useState(false);
+  const location = useLocation();
+  console.log("location", location);
+
+  if (location.pathname.includes("login") || location.pathname.includes("registro")) {
+    return null;
+  }
+
   return(
     <div>
       <BarraSuperior desplegado={desplegado} setDesplegado={setDesplegado} />
