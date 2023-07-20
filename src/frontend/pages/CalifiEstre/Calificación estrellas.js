@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-const App = () => {
+const EvaluationPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [rating, setRating] = useState(0);
 
@@ -47,18 +47,25 @@ const App = () => {
     direction: "ltr",
     textAlign: "center",
     fontSize: "24px",
+    lineHeight: 0,
+    position: "relative",
   };
 
   const ratingStarStyle = {
     display: "inline-block",
-    position: "relative",
     width: "1em",
     color: "black",
+    cursor: "pointer",
+    position: "relative",
+    zIndex: 1,
   };
 
   const selectedStarStyle = {
     position: "absolute",
-    content: "\2605",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
     color: "gold",
   };
 
@@ -69,12 +76,13 @@ const App = () => {
   };
 
   const calificarBtnStyle = {
-    backgroundColor: "lightpurple",
-    color: "white",
+    backgroundColor: "black", // Fondo negro
+    color: "white", // Texto blanco
     padding: "10px 20px",
     border: "none",
     borderRadius: "8px",
     marginRight: "10px",
+    cursor: "pointer",
   };
 
   return (
@@ -88,32 +96,23 @@ const App = () => {
             <h2>Evaluación de Servicio</h2>
             <p>Por favor, califique nuestro servicio:</p>
             <div style={ratingStarsStyle}>
-              <span
-                style={ratingStarStyle}
-                onClick={() => changeRating(1)}
-              ></span>
-              <span
-                style={ratingStarStyle}
-                onClick={() => changeRating(2)}
-              ></span>
-              <span
-                style={ratingStarStyle}
-                onClick={() => changeRating(3)}
-              ></span>
-              <span
-                style={ratingStarStyle}
-                onClick={() => changeRating(4)}
-              ></span>
-              <span
-                style={ratingStarStyle}
-                onClick={() => changeRating(5)}
-              ></span>
+              {[1, 2, 3, 4, 5].map((value) => (
+                <span
+                  key={value}
+                  style={ratingStarStyle}
+                  onClick={() => changeRating(value)}
+                >
+                  {value <= rating ? <span style={selectedStarStyle}>&#9733;</span> : "\u2605"}
+                </span>
+              ))}
             </div>
             <div style={buttonsStyle}>
               <button style={calificarBtnStyle} onClick={submitRating}>
                 Enviar Evaluación
               </button>
-              <button onClick={closePopup}>Cancelar</button>
+              <button style={calificarBtnStyle} onClick={closePopup}>
+                Cancelar
+              </button>
             </div>
           </div>
         </div>
@@ -122,4 +121,6 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<EvaluationPopup />, document.getElementById("root"));
+
+export default EvaluationPopup;
