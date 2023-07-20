@@ -29,53 +29,35 @@ const Pbcitas = ({ citas }) => {
   const Prcitas = () => {
     const [cant, setcant] = useState(0);
     const [citas,setcitas]=useState([]);
+
   
     useEffect(() => {
-      setcant(5);
-      const listac=[
-        {
-            id:'1',
-            image:'https://1.bp.blogspot.com/-6Bgz6fXcGvo/XjOlzfqFwfI/AAAAAAAADJ0/YCzp2YSDQjslKkEWhqnjKDF4qGTXuXqYACLcBGAsYHQ/s1600/Cuales%2Bson%2Blos%2Btipos%2Bde%2Bdatos%2Bdisponibles%2Ben%2BJSON%2B3.jpg',
-            nombre:'Carrion Luis',
-            hora:"9am",
+      
+
+      function procesardato(data){
+        (data.rol)===0?
+        document.getElementById('tiusu').value="Bienvenido,"+data.nombres
+        :
+        document.getElementById('tiusu').value="Bienvenido,Profesor "+data.nombres +"!"
+      }
+
+      
+      const id=1;
+      const username="juan";
         
-        },
-        {
-            id:'2',
-            image:'https://0901.static.prezi.com/preview/v2/nm7jz55ilj47sldqcf6u4toih36jc3sachvcdoaizecfr3dnitcq_3_0.png',
-            nombre:'jose',
-            hora:"10am",
-        
-        },
-        {
-            id:'3',
-            image:'https://st.depositphotos.com/1016440/2534/i/600/depositphotos_25344733-stock-photo-sunrise-at-the-beach.jpg',
-            nombre:'pedro',
-            hora:"11am",
-        },
-        {
-            id:'4',
-            image:'https://st.depositphotos.com/1016440/2534/i/600/depositphotos_25344733-stock-photo-sunrise-at-the-beach.jpg',
-            nombre:'pedro',
-            hora:"11am",
-        },
-        {
-            id:'5',
-            image:'https://st.depositphotos.com/1016440/2534/i/600/depositphotos_25344733-stock-photo-sunrise-at-the-beach.jpg',
-            nombre:'pedro',
-            hora:"11am",
-        },
-
-
-    ];
-
-      setcitas(listac);
-
-        
-          /*fetch(`https://pw-tidb-server-production.up.railway.app/mostrar-usuarios/${id}`)
+      fetch(`https://pw-tidb-server-production.up.railway.app/mostrar-usuarios/${id}`)
             .then(response=>response.json())
-            .then(data=>setcitas(data))
-            .catch(e=>console.log("Ocurrio un error "+e ))*/
+            .then(data=>procesardato(data))
+            .catch(e=>console.log("Ocurrio un error "+e ))
+      
+      fetch(`https://pw-tidb-server-production.up.railway.app/citas/${username}`)
+          .then(response=>response.json())
+          .then(data=>{
+            setcitas(data)
+            setcant(data.length)
+            
+          })
+          .catch(e=>console.log("ocurrio un error "+e))
       
     }, []);
   
@@ -102,7 +84,7 @@ const Pbcitas = ({ citas }) => {
   
     return (
       <div className="pci">
-        <p>Bienvenido Andres</p>
+        <p id="tiusu"></p>
         {generatePbcitasComponents()}
       </div>
     );
