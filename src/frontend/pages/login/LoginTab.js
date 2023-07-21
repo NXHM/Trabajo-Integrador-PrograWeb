@@ -30,14 +30,15 @@ const LoginTab = () => {
           return r;
         })
         .then((u) => {
-          console.log("u", u);
+          console.log("usuario y contraseña correctos", u);
           setLoading(false);
           // Iniciar session en el app state
           setUser(u);
-          redirect('/');
+          redirect('/reserva');
         }) // Corrected this line
         .catch(e => {
           console.log("Ocurrio un error ", e);
+          alert("usuario o contraseña incorrectos");
           setLoading(false);
         });
           
