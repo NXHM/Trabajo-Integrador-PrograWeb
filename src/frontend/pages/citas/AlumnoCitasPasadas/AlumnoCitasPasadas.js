@@ -1,8 +1,15 @@
-import React from "react";
 import "../barras/citas.css";
-
+import React, { useEffect, useState } from 'react';
 import Table from "../infoProfe";
+
+
 const PaginaCitasPasadas = () => {
+
+    const[fecha, setFecha] = useState([]);
+    const[Curso, setCurso] = useState([]);
+
+
+  
     return (
       <div >
 
@@ -28,11 +35,7 @@ const PaginaCitasPasadas = () => {
           <button className="cancelarBoton-PaginaCita" >Calificar</button>
           
         </button>
-  
-  
-  
-        
-  
+
   
       </div>
     );
