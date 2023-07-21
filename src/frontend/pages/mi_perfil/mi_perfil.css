@@ -61,3 +61,7 @@
 #mi_perfil #adjuntar-foto:hover {
     cursor: pointer;
 }
+
+#mi_perfil #rol {
+    pointer-events: none;
+}

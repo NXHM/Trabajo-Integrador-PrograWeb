@@ -1,4 +1,4 @@
-#mis_horarios .f-input[type=text] {
+#mis_horarios .f-input {
     width: 220px;
     height: 56px;
     border-radius: 4px;
@@ -6,9 +6,10 @@
     padding: 0 0 0 18.5px;
     margin: 20px 30px 10px 0;
     font-size: 12px;
+    appearance: none;
 }
 
-#mis_horarios .f-input[type=text]:focus {
+#mis_horarios .f-input:focus {
     outline-color: #6750A4;
 }
 

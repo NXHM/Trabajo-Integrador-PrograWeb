@@ -42,3 +42,20 @@
 #mis_horarios .xbtn:hover {
     color: #6750A4;
 }
+
+#mis_horarios .p-title {
+    display: inline;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#mis_horarios .hr {
+    width: 1350px;
+    margin: 20px 0 20px 0;
+}
+
+#mis_horarios .p {
+    margin: 0 0 15px 0;
+    size: 14px;
+    font-weight: 500;
+}
