@@ -78,7 +78,7 @@ function GridCardCitas() {
     const [citas, setCitas] = useState([]);//
 
     useEffect(() => {
-        cargarTodasCitasFuturasAlumno(2, setCitas);// id del alumno
+        cargarTodasCitasFuturasAlumno(1, setCitas);// id del alumno
     }, []);
     if (
         citas.length === 0

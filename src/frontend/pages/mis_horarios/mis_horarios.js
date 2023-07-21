@@ -33,7 +33,7 @@ import {useState, useEffect} from 'react';
 
     useEffect(() => {
         try {
-            fetch(`http://localhost:3001/mis-horarios/cargar/horarios/${id}`)
+            fetch(`http://pw-tidb-server-production.up.railway.app/mis-horarios/cargar/horarios/${id}`)
                 .then(checkStatus)  
                 .then(response => response.json())
                 .then(data => setHorarios(data))
@@ -48,7 +48,7 @@ import {useState, useEffect} from 'react';
         var horaInicio = document.getElementById("inicio").value;
         alert(horaInicio)
 
-        fetch(`http://localhost:3001/mis-horarios/guardar/${fecha}/${id}/${horaInicio}`)
+        fetch(`http://pw-tidb-server-production.up.railway.app/mis-horarios/guardar/${fecha}/${id}/${horaInicio}`)
             .then(checkStatus)
             .then(response => response.text())
             .then(data => alert(data))
@@ -56,7 +56,7 @@ import {useState, useEffect} from 'react';
     }
 
     function borrarRegistro(idHorario) {
-        fetch(`http://localhost:3001/mis-horarios/borrar/horario/${idHorario}`)
+        fetch(`http://pw-tidb-server-production.up.railway.app/mis-horarios/borrar/horario/${idHorario}`)
             .then(checkStatus)
             .then(response => response.text())
             .then(data => alert(data))

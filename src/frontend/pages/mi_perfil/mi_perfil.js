@@ -37,6 +37,7 @@ function MiPerfil() {
     document.getElementById("presentacion").value = data.presentacion;
     document.getElementById("carrera").value = data.idCarrera;
     document.getElementById("universidad").value = data.idUniversidad;
+    document.getElementById("foto-usuario").src = data.foto;
 
     data.idUniversidad ? setUniversidadState(true) : setUniversidadState(false)
     data.idCarrera ? setCarreraState(true) : setCarreraState(false)
@@ -45,25 +46,25 @@ function MiPerfil() {
   }
 
   useEffect(() => {
-    fetch(`http://localhost:3001/mi-perfil/cargar/usuario/${id}`)
+    fetch(`http://pw-tidb-server-production.up.railway.app/mi-perfil/cargar/usuario/${id}`)
       .then(checkStatus)
       .then(response => response.json())
       .then(cargarUsuario)
       .catch(handleError)
 
-    fetch("http://localhost:3001/mi-perfil/cargar/universidades")
+    fetch("http://pw-tidb-server-production.up.railway.app/mi-perfil/cargar/universidades")
       .then(checkStatus)  
       .then(response => response.json())
       .then(data => setUniversidades(data))
       .catch(handleError)
 
-    fetch(`http://localhost:3001/mi-perfil/cargar/carreras/1`)
+    fetch(`http://pw-tidb-server-production.up.railway.app/mi-perfil/cargar/carreras/1`)
       .then(checkStatus)  
       .then(response => response.json())
       .then(data => setCarreras(data))
       .catch(handleError)
     
-    fetch("http://localhost:3001/mi-perfil/cargar/cursos/1")
+    fetch("http://pw-tidb-server-production.up.railway.app/mi-perfil/cargar/cursos/1")
       .then(checkStatus)  
       .then(response => response.json())
       .then(data => setCursos(data.Cursos))
@@ -85,7 +86,7 @@ function MiPerfil() {
     var carrera = document.getElementById("carrera").value;
     var universidad = document.getElementById("universidad").value;
 
-    fetch(`http://localhost:3001/mi-perfil/guardar/${id}/${password}/${nombres}/${apellidos}/${tipo}/${numero}/${rol}/${titulo}/${presentacion}/${carrera}/${universidad}`)
+    fetch(`http://pw-tidb-server-production.up.railway.app/mi-perfil/guardar/${id}/${password}/${nombres}/${apellidos}/${tipo}/${numero}/${rol}/${titulo}/${presentacion}/${carrera}/${universidad}`)
       .then(checkStatus)
       .then(response => response.text())
       .then(data => alert(data))
@@ -124,7 +125,7 @@ function MiPerfil() {
   function guardarFoto() {
     var link = document.getElementById("link").value
 
-    fetch(`/mi-perfil/guardar/foto/${id}/${link}`)
+    fetch(`http://pw-tidb-server-production.up.railway.app/mi-perfil/guardar/foto/${id}/${link}`)
       .then(checkStatus)  
       .then(response => response.text())
       .then(data => alert(data))
