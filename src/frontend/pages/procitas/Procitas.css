@@ -3,7 +3,7 @@
     margin-left: 100px;
 }
 
-.Pbcitas{
+.pci .Pbcitas{
     
     background-color:rgb(247, 241, 241);
     
@@ -13,18 +13,18 @@
 
 }
 
-.Pbcitas #Titulo{
+.pci .Pbcitas #Titulo{
     margin-left: 10px;
 }
 
-.caja img{
+.pci .caja img{
     height: 90px;
     width: 90px;
     margin-left: 10px;
     margin-top: 10px;
 }
 
-.caja{
+.pci .caja{
     background-color: white;
     border-color: black;
     border-radius: 20px;
@@ -33,19 +33,21 @@
     height: 100px;
 }
 
-.caja #p1{
+.pci .caja #p1{
     margin-top: -100px;
     
 }
 
-.caja #p2{
+.pci .caja #p2{
     margin-left: 250px;
     
     font-size: 20px;
 }
 
 
-.cant{
-    display: flex;
+.pci .cant {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
     gap: 10px;
-}
+  }

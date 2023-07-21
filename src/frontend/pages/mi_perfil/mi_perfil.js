@@ -6,34 +6,26 @@ import './f-input.css';
 function MiPerfil() {
   const [toggleState, setToggleState] = useState(1);
 
-  ///////////////////////////////////////////////////
-
-  const [usuarios, setUsuarios] = useState([]);
-
-  function checkStatus(response) {
-    if (!response.ok) {
-      throw Error("Error en la solicitud: " + response.statusText);
-    }
-    return response;
-  }
-
-  function handleError(err) {
-    alert("Error en la solicitud. " + err);
+  function procesardatos(data){
+    document.getElementById('nombres').value = data.nombres;
+    document.getElementById('rol').value = data.rol;
+    document.getElementById('apellidos').value = data.apellidos;
+    document.getElementById('tipo').value = data.tipo_doc;
+    document.getElementById('numero').value = data.numero_doc;
   }
   
-  function mostrarUsuario() {
-    fetch("http://localhost:3001/mostrar-usuario")
-      .then(checkStatus)
-      .then(response => response.json())
-      .then(data => setUsuarios(data))
-      .catch(handleError)
-  }
 
+  
   useEffect(() => {
-    mostrarUsuario();
-  }, []);
+    
+      const id = 1;
+      fetch(`https://pw-tidb-server-production.up.railway.app/mostrar-usuarios/${id}`)
+        .then(response => response.json())
+        .then(procesardatos) // Corrected this line
+        .catch(e => console.log("Ocurrio un error " + e));
+    
 
-  //////////////////////////////////////////////////
+  }, []);
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -41,53 +33,60 @@ function MiPerfil() {
 
   return (
     <div id="mi_perfil">
-      <form id="my-form" method="post" action="http://localhost:3001/mi-perfil">
       <div className="container-1">
         <p className="p-title">Mi perfil</p>
-        <button id="btn-guardar" onClick={handleSubmit}>Guardar</button>
+        <button id="btn-guardar">Guardar</button>
         <hr className="hr"></hr>
         <p className="p">Información personal</p>
 
-        <table>
-        <tbody>
-        <tr>
-          <td>
-            {usuarios.map(usuario => (
-            <input type="text" id="nombres" name="nombres" className="f-input">{usuario.nombres}</input>
-            ))}
-            <label for="nombres" className="f-label">Nombres</label>
 
-            <br/>
+        
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <input type="text" id="nombres" name="nombres" className="f-input" />
+          <label htmlFor="nombres" className="f-label">
+            Nombres
+          </label>
+          <br />
+          <input type="text" id="rol" name="rol" className="f-input" />
+          <label htmlFor="rol" className="f-label">
+            Rol
+          </label>
+        </td>
 
-            <input type="text" id="rol" name="rol" className="f-input"/>
-            <label for="rol" className="f-label">Rol</label>
-          </td>
+        <td className="second-column">
+          <input type="text" id="apellidos" name="apellidos" className="f-input" />
+          <label htmlFor="apellidos" className="f-label">
+            Apellidos
+          </label>
+        </td>
 
-          <td className="second-column">
-            <input type="text" id="apellidos" name="apellidos" className="f-input"/>
-            <label for="apellidos" className="f-label">Apellidos</label>
-          </td>
+        <td>
+          <input type="text" id="tipo" name="tipo" className="f-input"  />
+          <label htmlFor="tipo" className="f-label">
+            Tipo de documento
+          </label>
+          <br />
+          <input type="text" id="numero" name="numero" className="f-input"  />
+          <label htmlFor="numero" className="f-label">
+            Número
+          </label>
+        </td>
 
-          <td>
-            <input type="text" id="tipo" name="tipo" className="f-input"/>
-            <label for="tipo" className="f-label">Tipo de documento</label>
-
-            <br/>
-
-            <input type="text" id="numero" name="numero" className="f-input"/>
-            <label for="numero" className="f-label">Número</label>
-          </td>
-
-          <td className="fourth-column">
-          <img id="foto-usuario" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="foto"/>
-
-          <br/>
-
+        <td className="fourth-column">
+          <img id="foto-usuario" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="foto" />
+          <br />
           <p id="adjuntar-foto">Adjuntar foto</p>
-          </td>
-        </tr>
-        </tbody>
-        </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+        
       </div>
 
       <div className="container-2">
@@ -166,7 +165,6 @@ function MiPerfil() {
           </div>
         </div>
       </div>
-    </form>
     </div>
   );
 }

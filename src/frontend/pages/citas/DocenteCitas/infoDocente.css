@@ -1,75 +1,12 @@
-.barraTareas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 30px; /* Ancho de la barra de tareas */
-    background-color: #f1f1f1;
-    padding: 10px;
-    transition: width 0.3s ease; /* Transición suave para el cambio de ancho */
-  }
-  
-  .barraTareas.desplegado {
-    width: 100px; /* Ancho de la barra de tareas desplegada */
-  
-  }
-  
-  .botonDesplegar {
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .contenidoDesplegable {
-    text-align: center;
-    display: block;
-    text-decoration: none;
-  }
-  
-  .iconoTresBarras {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-  
-  
-  }
-  
-  .barra {
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    margin: 2px 0;
-  }
-  
-  
-  
-  .barra-superior {
-    height: 60px;
-    background-color:rgb(243, 237, 247);
-    color: black;
-    font-size: 25px;
-    align-items: center;
-    justify-content:center;
-    display: flex;
-    text-align: center;
-  }
-  
-  h1 {
+  h1.titInfoDocente{
     position: relative;
-    top: 20px;
-    left: 120px;
+    /* top: 20px;
+    left: 120px; */
     font-family: Roboto, Arial;
     font-weight: 0;
+    margin-left: 0;
   }
   
-  hr {
-    position: relative;
-    width: 86.3%;
-    top: 10px;
-  }
   
  /* table{
     /*border: black solid 1px;
@@ -77,12 +14,12 @@
   
   }*/
   
-  .foto {
+  .fotoInfoDocente {
     border: black solid 1px;
     width: 100px;
   }
   
-  .burbuja {
+  .burbujaInfoDocente {
     font-family: Roboto, Arial;
     text-align: center;
     background-color: #EADDFF;
@@ -96,25 +33,25 @@
     font-weight: bold;
   }
   
-  .nombre {
+  .nombreInfoDocente {
     font-family: Roboto, Arial;
     font-size: 16px;
     padding-left: 5px;
   }
   
-  .grado {
+  .gradoInfoDocente {
     font-family: Roboto, Arial;
     font-size: 13px;
     color: #49454F;
     padding-left: 5px;
   }
   
-  .foto {
+  .fotoInfoDocente {
     width: 184px;
     height: 151px;
   }
   
-  .texto {
+  .textoInfoDocente {
     width: 626px;
     height: 151px;
     font-family: Roboto, Arial;
@@ -122,7 +59,7 @@
     padding-left: 5px;
   }
   
-  .correo {
+  .correoInfoDocente {
     font-family: Roboto, Arial;
     font-size: 13px;
     position: relative;
@@ -141,13 +78,13 @@
     text-decoration-line: underline;
   }
   
-  .cursos {
+  .cursosInfoDocente {
     font-family: Roboto, Arial;
     font-size: 13px;
     font-weight: 100;
   }
   
-  .opciones {
+  .opcionesInfoDocente {
     text-align: center;
     font-family: Roboto, Arial;
     font-size: 14px;
@@ -160,21 +97,18 @@
     margin-left: 10px;
   }
   
-  .conf {
+  .confInfoDocente {
     border-collapse: separate;
     border-spacing: 10px 5px;
   }
   
-  .subtit {
+  .subtitInfoDocente {
     position: relative;
-    margin-left: 120px;
-    margin-top: 20px;
-    margin-bottom: -15px;
     font-family: Roboto, Arial;
     font-size: 14px;
   }
   
-  .input {
+  .inputInfoDocente {
     width: 270px;
     height: 50px;
     border: rgb(103, 80, 164) 3px solid;
@@ -187,7 +121,7 @@
     
    }
   
-   .log1 {
+   .log1InfoDocente {
     font-family: Roboto,Arial;
     font-size: 13px;
     background-color: #FFF6FF;
@@ -198,7 +132,7 @@
     left: 10px;
   }
   
-  .formato {
+  .formatoInfoDocente {
     font-family: Roboto,Arial;
     font-size: 12px;
     color: #49454F;
@@ -207,7 +141,7 @@
     left: 20px;
   }
   
-  .horas {
+  .horasInfoDocente {
     text-align: center;
     font-family: Roboto, Arial;
     font-size: 14px;
@@ -220,31 +154,37 @@
     background: #E8DEF8;
   }
   
-  .conf2 {
+  .conf2InfoDocente {
     border-collapse: separate;
     border-spacing: 10px 5px;
     position: relative;
     margin-top: -15px;
-    margin-left: 130px;
+    /* margin-left: 130px; */
   
   }
   
-  .duracion {
-    margin-left: 120px;
+  .duracionInfoDocente {
+    /* margin-left: 120px; */
     font-family: Roboto, Arial;
     font-size: 14px;
     font-weight: 100;
     margin-top: -10px;
   }
   
-  .fondo {
+  .fondoInfoDocente {
     background: #FEF7FF;
-    margin-left: 130px;
-    margin-top: 20px;
-    width: 1300px;
+    /* margin-left: 130px; */
+    margin-top: 45px;
+    width: 100%;
   }
   
-  .sinfondo {
-    margin-left: 130px;
+  .sinfondoInfoDocente {
+    /* margin-left: 130px; */
     margin-top: 20px;
+  }
+
+  .divInfoDocente {
+    /*margin-left: 43px;*/
+    padding-left: 193px;
+    box-sizing: border-box;
   }
