@@ -6,7 +6,7 @@ import Procitas from "./frontend/pages/procitas/Procitas.js";
 import MiPerfil from './frontend/pages/mi_perfil/mi_perfil';
 import AlumnoCitasPasadas from  './frontend/pages/citas/AlumnoCitasPasadas/AlumnoCitasPasadas';
 import InfoDocente from './frontend/pages/citas/DocenteCitas/InfoDocente';
-
+import VerCitas from './frontend/pages/citas/AlumnoCitas/AlumnoCitas';
 import {
     createBrowserRouter,
     Outlet
@@ -51,6 +51,12 @@ const router = createBrowserRouter([
                 path:"/infodocente",
                 element:<InfoDocente/>
             },
+            {
+                path:"/vercitas",
+                element:<VerCitas/>
+
+
+            }
         ]
     },
     
