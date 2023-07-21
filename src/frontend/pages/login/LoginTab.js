@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link, redirect } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from './hooks';
 import './login.css';
 
 const LoginTab = () => {
+  const navigate = useNavigate();
   const [_, setUser] = useAuth();
 
   const [username, setUsername]=useState("");
@@ -14,7 +15,7 @@ const LoginTab = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    fetch('http://localhost:3001/login', {
+    fetch('http://pw-tidb-server-production.up.railway.app/login', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -34,7 +35,7 @@ const LoginTab = () => {
           setLoading(false);
           // Iniciar session en el app state
           setUser(u);
-          redirect('/reserva');
+          navigate('/reserva');
         }) // Corrected this line
         .catch(e => {
           console.log("Ocurrio un error ", e);

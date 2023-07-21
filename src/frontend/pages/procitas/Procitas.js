@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../login/hooks";
 import "./Procitas.css";
 
@@ -28,17 +29,18 @@ const Pbcitas = ({ citas }) => {
 };
 
 const Prcitas = () => {
+  const navigate = useNavigate();
   const [user] = useAuth();
   const [cant, setcant] = useState(0);
   const [citas,setcitas]=useState([]);
 
   useEffect(() => {
-    if (!user) console.log('redirect!!!!');
+    if (!user) navigate('/login');
   }, []);
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:3001/citas/${user.username}`)
+      fetch(`http://pw-tidb-server-production.up.railway.app/citas/${user.username}`)
         .then(response=>response.json())
         .then(data=>{
           setcitas(data);

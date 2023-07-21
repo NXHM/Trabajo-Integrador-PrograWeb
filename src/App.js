@@ -11,6 +11,7 @@ import Barras from './frontend/pages/citas/nuevasBarras/Barras';
 import MiPerfil from "./frontend/pages/mi_perfil/mi_perfil.js";
 import LoginTab from './frontend/pages/login/LoginTab.js';
 import Registro from './frontend/pages/Registro/registrodeusuario.js';
+import { useAuth } from "./frontend/pages/login/hooks.js";
 
 
 
