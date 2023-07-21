@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import router from "./Router.js";
 import {
     RouterProvider,
@@ -13,8 +14,6 @@ import LoginTab from './frontend/pages/login/LoginTab.js';
 import Registro from './frontend/pages/Registro/registrodeusuario.js';
 import { useAuth } from "./frontend/pages/login/hooks.js";
 
-
-
 function App(){
     //Prop para heredar
     /*const [desplegado, setDesplegado] = useState(false);
@@ -22,7 +21,7 @@ function App(){
         <div>
             <Barras desplegado={desplegado} setDesplegado={setDesplegado} />
             <div className={`paginaContenido ${desplegado ? "desplegado" : ""}`} desplegado={desplegado}>
-                <MiPerfil/>
+                <VerCitas/>
             </div>
             
         </div>

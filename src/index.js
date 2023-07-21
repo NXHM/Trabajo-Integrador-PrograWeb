@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+//  import './index.css';
 
 import reportWebVitals from './reportWebVitals';
+
 import PaginaBaseCitas from './frontend/pages/citas/AlumnoCitas.js';
 import VerCitas from './frontend/pages/citas/AlumnoCitas/AlumnoCitas.js';
 import PaginaCitasPasadas from './frontend/pages/citas/AlumnoCitasPasadas/AlumnoCitasPasadas.js';
@@ -14,6 +15,7 @@ import Pagina3 from './frontend/pages/miperfil/Pagina3';
 import Prcitas from './frontend/pages/procitas/Procitas';
 import ReservaFecha from './frontend/pages/reserva/reservaFecha.js';
 import MisHorarios from './frontend/pages/mis_horarios/mis_horarios.js';
+
 import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 /*
