@@ -1,5 +1,5 @@
 
-.Titulo {
+#pagCitaPasada .Titulo {
   position: relative;
   top: 20px;
   left: 130px;
@@ -17,7 +17,7 @@ hr {
   top: 10px;
 }
 
-.crearCita{
+#pagCitaPasada .crearCita{
   float: right;
   margin-top: 50px;
   margin-right: 130px;
@@ -29,7 +29,7 @@ hr {
   color: white;
 }
 
-.citasPasadas{
+#pagCitaPasada .citasPasadas{
   border-width: 1px;
   background-color: white;
   color:rgb(103, 80, 164);

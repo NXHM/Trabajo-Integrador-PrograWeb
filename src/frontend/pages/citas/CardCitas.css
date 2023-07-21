@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#a-card {
+    padding: 2px;
+    border-radius: 12px;
+    border: 1px solid var(--m-3-sys-light-outline-variant, #CAC4D0);
+    background-color: #FEF7FF;
+    max-height: 170em;
+    max-width: 22em;
+    width: auto;
+    position: relative;
+}
+
+#a-card .card-img-top {
+    background: lightgray 50% / cover no-repeat;
+}
+
+#a-card .rounded-circle {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#a-card .card-title {
+    color: var(--m-3-sys-light-on-surface, #1D1B20);
+
+    /* M3/title/medium */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+#a-card .card-subtitle {
+    color: var(--m-3-sys-light-on-surface, #1D1B20);
+    text-align: center;
+
+    /* M3/body/medium */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+#a-card .span {
+    font-size: medium;
+}
+
+#a-card .memberpic .member {
+    overflow: hidden;
+    width: 180px;
+}
+
+#a-card a:link {
+    color: black;
+    font-weight: 500;
+}
+
+#a-card .focus {
+    color: rgb(0, 0, 0) !important;
+}
+
+#a-card a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#a-card a:visited {
+    font-weight: normal;
+}
+
+#a-card .card-citas-card {
+    max-height: 170em;
+    max-width: 22em;
+    width: auto;
+    position: relative;
+}
+
+#a-card .card-img-top {
+    max-width: auto;
+}
+
+#a-card .btn-primary {
+    color: var(--m-3-sys-light-primary, #6750A4);
+    text-align: center;
+
+    /* M3/label/large */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+
+    display: flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100px;
+    border: 1px solid var(--m-3-sys-light-outline, #79747E);
+
+}

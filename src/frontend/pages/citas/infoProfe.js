@@ -3,8 +3,6 @@ import React from 'react';
 const Table = () => {
   return (
     <table className='inforProfe_Tabla'>
-      <thead>
-      </thead>
       <tbody >
         <tr >
           <td className='contenedorCuenta' rowSpan="2">

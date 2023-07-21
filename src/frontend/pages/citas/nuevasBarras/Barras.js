@@ -37,9 +37,9 @@ const BarraSuperior = ({ desplegado, setDesplegado }) => {
       </div>
       <div id="botonDesplegar" onClick={toggleDesplegado}>
           <div id="iconoTresBarras">
-            <div class="barra"></div>
-            <div class="barra"></div>
-            <div class="barra"></div>
+            <div className="barra"></div>
+            <div className="barra"></div>
+            <div className="barra"></div>
           </div>
         </div>
       <hr className={`lineaSeparadora ${desplegado ?"desplegado" : ""}`}/>

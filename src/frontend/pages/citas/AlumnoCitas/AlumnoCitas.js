@@ -2,31 +2,15 @@ import React from "react";
 
 //import Barras from '../nuevasBarras/Barras.js';
 //import baseDatos
-
+import  GridCardCitas from "../gridCardCitas";
 import  "./AlumnoCitasEstilos.css";
-function handleClick(){
-    //Que habrá la pagina donde se programa citas
-    window.alert("Proximamente-programar cita");
-}
-function MostrarCitasExistentes({desplegado}){
-    //verificar si hay citas guardadas-dps
-    return(
-        <div>
-            <h1 className="Titulo">Mis citas</h1>
 
-            
-            <div id="noCitas">Actualmente no tiene citas de Asesoría reservadas</div>
-            <button id="botonProgramarCita" onClick={handleClick}>Programar una Cita</button>
 
-            
-        </div>
-    );
-}
-function VerCitas({ desplegado }) {
+function VerCitas() {
     return(
-        <div>
+        <div id="bordes-citas">
             
-            <MostrarCitasExistentes desplegado={ desplegado }/>
+            <GridCardCitas/>
         </div>
     );
 }
