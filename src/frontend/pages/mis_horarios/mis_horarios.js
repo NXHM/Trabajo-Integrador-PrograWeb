@@ -46,7 +46,6 @@ import {useState, useEffect} from 'react';
     function guardarHorarios() {
         var fecha = document.getElementById("dia").value;
         var horaInicio = document.getElementById("inicio").value;
-        alert(horaInicio)
 
         fetch(`http://pw-tidb-server-production.up.railway.app/mis-horarios/guardar/${fecha}/${id}/${horaInicio}`)
             .then(checkStatus)
