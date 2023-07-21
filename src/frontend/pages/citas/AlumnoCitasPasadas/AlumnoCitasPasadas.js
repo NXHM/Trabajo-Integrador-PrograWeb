@@ -5,8 +5,16 @@ import Table from "../infoProfe";
 
 const PaginaCitasPasadas = () => {
 
-    const[fecha, setFecha] = useState([]);
-    const[Curso, setCurso] = useState([]);
+  const[info,setinfo]=useState([]);
+
+  fetch(`https://pw-tidb-server-production.up.railway.app/citas/${info}`)
+          .then(response=>response.json())
+          .then(data=>{
+            setcitas(data)
+            setcant(data.length)
+            
+          })
+          .catch(e=>console.log("ocurrio un error "+e))
 
 
   
@@ -28,8 +36,8 @@ const PaginaCitasPasadas = () => {
             <img className="fotoProfesor-PaginaCita" src="https://qespacio.com/blog/wp-content/uploads/2019/10/profesor-particular-ingles.jpg" alt="Descripción de la imagen" />
           </div>
   
-          <div className="fechaCita-PaginaCita">Lunes, 24 de abril de 2023 - 08:00 am</div>
-          <div className="cursoCita-PaginaCita" >Curso: Programacion Web</div>
+          <div className="fechaCita-PaginaCita">info.fechaCita</div>
+          <div className="cursoCita-PaginaCita" >info.cursoCita</div>
   
           <a className="enlaceZoom-PaginaCita" href="http://ulima.edu.pe" target="_blank" rel="noreferrer">Enlace a Zoom</a>
           <button className="cancelarBoton-PaginaCita" >Calificar</button>
