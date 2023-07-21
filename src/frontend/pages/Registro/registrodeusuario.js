@@ -1,7 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./estilos.css";
 
 function Registro() {
+  const[info,setinfo]=useState([]);
+  function handleClick(){
+    let correo = document.getElementById("correo");
+    let password = document.getElementById("password");
+    let nombres = document.getElementById("nombres");
+    let tipo_documento = document.getElementById("tipo_documento");
+    let rol = document.getElementById("rol");
+    let apellidos = document.getElementById("apellidos");
+    let numero_documento = document.getElementById("numero_documento");
+    fetch(`https://pw-tidb-server-production.up.railway.app/registrar-usuario/${correo}/${password}/${nombres}/${tipo_documento}/
+    ${rol}/${apellidos}/${numero_documento}`)
+    .then(response=>response.json())
+    .then(data=>setinfo(data))
+    .catch(e=>console.log("Ocurrio un error "+e ))
+  }
   const [correo, setCorreo] = useState('');
   const [password, setPassword] = useState('');
   const [confirmarPassword, setConfirmarPassword] = useState('');
@@ -40,7 +55,10 @@ function Registro() {
 
   if (submitted) {
     return renderWelcomePage ();
-  }
+  } 
+
+
+
 
   return (
     <div className='todo'>
@@ -84,12 +102,11 @@ function Registro() {
         </div>
 
 
-        <input type="submit" value="Registrarse"/>
+        <button onClick={handleClick}>Guardar</button> 
       </form>
     </div>
   );
 }
 
 export default Registro;
-
 
