@@ -1,11 +1,11 @@
 
-.Titulo {
+.Titulo-PaginaCita {
   position: relative;
   top: 20px;
   left: 130px;
 }
 
-.subtitulo{
+.subtitulo-PaginaCita{
   position: relative;
   top: 20px;
   left: 130px;
@@ -17,9 +17,9 @@ hr {
   top: 10px;
 }
 
-.crearCita{
+.crearCita-PaginaCita{
   float: right;
-  margin-top: 50px;
+  margin-top: 0.5%;
   margin-right: 130px;
   width: 10%;
   border-radius: 30px;
@@ -29,13 +29,15 @@ hr {
   color: white;
 }
 
-.citasPasadas{
+
+
+.citasPasadas-PaginaCita{
   border-width: 1px;
   background-color: white;
   color:rgb(103, 80, 164);
   float: right;
-  margin-top: 10px;
-  margin-right: 130px;
+  margin-top: 2%;
+  margin-right: 0px;
   width: 10%;
   border-radius: 30px;
   height: 40px;
@@ -43,7 +45,7 @@ hr {
 
 
 
-.citaX{
+.citaX-PaginaCita{
   width: 300px;
   height: 425px;
   margin-top: 50px;
@@ -64,13 +66,13 @@ hr {
   height: 15px;
 }
 
-.fotoProfesor{
+.fotoProfesor-PaginaCita{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.contenerdorImagen{
+.contenerdorImagen-PaginaCita{
   height: 150px;
   object-fit: cover;
   background-color: gray;
@@ -153,7 +155,7 @@ hr {
   font-size: 15px;
 }
 
-.fechaCita{
+.fechaCita-PaginaCita{
   margin-top: 5%;
   text-align: left;
   height: 25px;
@@ -162,20 +164,20 @@ hr {
   font-weight: 650;
 }
 
-.cursoCita{
+.cursoCita-PaginaCita{
   text-align: left;
   height: 30px;
   font-size: 13px;
   margin-left: 2%;
 }
 
-.enlaceZoom{
+.enlaceZoom-PaginaCita{
   margin-top: 20px;
   display: flex;
   margin-left: 2%;
 }
 
-.cancelarBoton{
+.cancelarBoton-PaginaCita{
   border-width: 1px;
   background-color: white;
   color:rgb(103, 80, 164);

@@ -3,6 +3,10 @@ import Barras from './frontend/pages/citas/nuevasBarras/Barras';
 import LoginTab from './frontend/pages/login/LoginTab.js';
 import Registro from './frontend/pages/Registro/registrodeusuario.js';
 import Procitas from "./frontend/pages/procitas/Procitas.js";
+import PaginaCitasPasadas from './frontend/pages/citas/AlumnoCitasPasadas/AlumnoCitasPasadas';
+import VerCitas from './frontend/pages/citas/AlumnoCitas/AlumnoCitas';
+
+
 import {
     createBrowserRouter,
     Outlet
@@ -34,6 +38,10 @@ const router = createBrowserRouter([
             {
                 path:"/reserva",
                 element:<Procitas/>
+            },
+            {
+                path:"/citasPasadas",
+                element:<PaginaCitasPasadas/>
             }
         ]
     },
